@@ -1,0 +1,5 @@
+# install deno
+curl -fsSL https://deno.land/x/install/install.sh | sh
+
+# install nim
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
