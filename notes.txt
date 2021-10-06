@@ -3,3 +3,14 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 
 # install nim
 curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+
+# add to ~/.bash_profile
+export PATH=/home/gitpod/.nimble/bin:$PATH
+
+export DENO_INSTALL="/home/gitpod/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# install numpy and scipy
+pip install numpy
+pip install scipy
+
