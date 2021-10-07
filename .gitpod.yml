@@ -3,10 +3,10 @@ tasks:
   - init: echo 'init script' # runs during prebuild
     command: |
       curl -fsSL https://deno.land/x/install/install.sh | sh
-      curl https://nim-lang.org/choosenim/init.sh -sSf | sh
-      echo 'export PATH=/home/gitpod/.nimble/bin:$PATH' >>~/.bash_profile
-      echo 'export DENO_INSTALL="/home/gitpod/.deno"' >>~/.bash_profile
-      echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >>~/.bash_profile
+      curl https://nim-lang.org/choosenim/init.sh -sSf | sh -y
+      echo 'export PATH=/home/gitpod/.nimble/bin:$PATH' >>~/.bashrc
+      echo 'export DENO_INSTALL="/home/gitpod/.deno"' >>~/.bashrc
+      echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >>~/.bashrc
       source ~/.bash_profile
       pip install numpy
       pip install scipy
