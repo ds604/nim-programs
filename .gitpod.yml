@@ -7,8 +7,11 @@ tasks:
       echo 'export PATH=/home/gitpod/.nimble/bin:$PATH' >>~/.bash_profile
       echo 'export DENO_INSTALL="/home/gitpod/.deno"' >>~/.bash_profile
       echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >>~/.bash_profile
+      source ~/.bash_profile
       pip install numpy
       pip install scipy
+      nimble install inim -y
+      nimble install arraymancer -y
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
